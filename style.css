@@ -1,0 +1,251 @@
+body {
+	background: #2c373b;
+	color: #b2b9bC;
+	font-family: 'Open Sans Condensed', serif;
+	font-weight: 400;
+	line-height: 2em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Lobster', serif;
+	color: #fff;
+	font-weight: 400;
+}
+
+.emphasis {
+	font-family: 'Lobster', serif;
+}
+
+.button {
+	border-radius: 0.5em;
+	box-shadow: inset 0 0 0 2px rgba(255,255,255,0.5);
+	color: #369ab8;
+	color: #fff;
+	display: inline-block;
+	text-decoration: none;
+	background-color: #0cd6d6;
+	margin-top: 1em;
+}
+
+.arrowDown {
+	font-family: sans-serif;
+	font-size: 1.75em;
+	margin-top: 0.75em;
+	margin-bottom: 0.5em;
+	text-align: center;
+}
+
+.work_img {
+	width: 15em;
+}
+
+.icon {
+	width: 1.5em;
+}
+
+.blog_img {
+	width: 7em;
+}
+
+.star_img {
+	width: 1em;
+}
+
+.dlg-no-title .ui-dialog-titlebar {
+	display: none;
+}
+
+ul.skilllist .skill::after {
+	content: "  ";
+	margin-left: 0.5em;
+}
+
+#header a {
+	text-decoration: none;
+}
+
+#nav a {
+	color: #fff;
+	font-style: italic;
+	text-decoration: none;
+}
+
+#hero, #quote {
+	background: #12c155;
+	color: #fff;
+	text-align: center;
+}
+
+#divider {
+	position: relative;
+	text-align: center;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #2c373b;
+	top: 2em;
+	margin-bottom: 4em;
+}
+
+#work, #blog, #presence {
+	background: #c1c1c1;
+	color: #2c373b;
+}
+
+#work_sub {
+	text-align: center;
+}
+
+#carousel {
+	overflow: hidden;
+}
+
+#carousel ul {
+	width: 1920px;
+	padding: 0;
+	margin: 0;
+}
+
+#carousel ul li {
+	width: auto;
+	text-align: center;
+	list-style: none;
+	float: left;
+	padding: 0.5em;
+	display: inline-block;
+}
+
+#skills, #contact {
+	background: #fff;
+	color: #2c373b;
+	text-align: center;
+}
+
+ul.skilllist {
+	text-align: left;
+}
+
+#resume {
+	margin: 1em 0 0 0;
+}
+
+#resume a {
+	text-decoration: none;
+	color: #2c373b;
+}
+
+#blog_imgs {
+	text-align: center;
+}
+
+ul.stars li {
+	display: inline-block;
+}
+
+#reading {
+	font-size: 0.8em;
+	margin-bottom: 3em;
+}
+
+#reading a {
+	color: #fff;
+	text-decoration: underline;
+	font-style: italic;
+}
+
+#star_img li {
+	display: inline-block;
+}
+
+#quote {
+	font-family: 'Parisienne', serif;
+	font-size: 1.75em;
+}
+
+#contact h5, h6 {
+	color: #2c373b;
+}
+
+#presence {
+	text-align: center;
+}
+
+#presencelist {
+	font-family: FontAwesome;
+}
+
+ul.social a {
+	text-decoration: none;
+	color: #fff;
+	padding: 0.5em;
+	border-radius: 0.5em;
+	margin: 0 0.25em 0 0.25em;
+}
+
+ul.social li {
+	display: inline-block;
+}
+
+ul.social li a.fa-linkedin {
+	background: #007bb6;
+}
+
+ul.social li a.fa-linkedin:hover {
+	background: #028fd2;
+}
+
+ul.social li a.fa-github {
+	background: #000;
+}
+
+ul.social li a.fa-github:hover {
+	background: #383838;
+}
+
+ul.social li a.fa-facebook {
+	background: #3b5998;
+	padding-left: 0.65em;
+	padding-right: 0.65em;
+}
+
+ul.social li a.fa-facebook:hover {
+	background: #4b6bb0;
+}
+
+ul.social li a.fa-twitter {
+	background: #00aced;
+}
+
+ul.social li a.fa-twitter:hover {
+	background: #1dcaff;
+}
+
+ul.social li a.fa-pinterest {
+	background: #cb2027;
+	padding-left: 0.55em;
+	padding-right: 0.55em;
+}
+
+ul.social li a.fa-pinterest:hover {
+	background: #dd252c;
+}
+
+ul.social li a.fa-book {
+	background: #a98d61;
+}
+
+ul.social li a.fa-book:hover {
+	background: #dab77e;
+}
+
+ul.social li a.fa-envelope {
+	background: #12c155;
+}
+
+ul.social li a.fa-envelope:hover {
+	background: #17d660;
+}
+
+#footer {
+	color: #62696c;
+	text-align: center;
+}

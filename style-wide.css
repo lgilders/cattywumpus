@@ -1,0 +1,102 @@
+body {
+	font-size: 15pt;
+	letter-spacing: 0.035em;
+	line-height: 1.75em;
+}
+
+h1 {
+	font-size: 1.5em;
+}
+
+h2 {
+	font-size: 1.25em;
+	margin-bottom: 0.75em;
+}
+
+.button {
+	font-size: 1em;
+	padding: 0.25em 0.75em 0.25em 0.75em;
+}
+
+#header {
+	margin: 2em 3em 0 0;
+}
+
+#nav {
+	text-align: right;
+}
+
+#nav a {
+	margin-left: 2em;
+}
+
+#hero {
+	border-top-left-radius: 0.5em;
+	border-top-right-radius: 0.5em;
+	margin: 2em 0 2em 0;
+	padding: 4em 0 2em 0;
+}
+
+#hero h2 {
+	font-size: 2.5em;
+	margin-bottom: 0.15em;
+}
+
+#hero h3 {
+	margin-bottom: 0.75em;
+}
+
+#hero p {
+	font-size: 1.25em;
+	margin-bottom: 0.5em;
+}
+
+#divider h4 {
+	font-size: 1.25em;
+	text-align: center;
+	font-style: italic;
+	color: #2c373b;
+}
+
+#work, #skills, #blog, #quote, #contact, #presence {
+	margin: -2em 0 1em 0;
+	padding: 1em 3em 3em 3em;
+	line-height: 1.5em;
+}
+
+#work h5, #skills h5, #blog h5 {
+	color: #2c373b;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+#work_sub p, #blog p {
+	margin: 0.5em;
+}
+
+#work_button {
+	margin: 0.5em;
+}
+
+#reading h5 {
+	font-size: 1.5em;
+}
+
+#reading_button a {
+	text-decoration: none;
+	font-style: normal;
+	font-size: 1.25em;
+}
+
+#quote {
+	padding-bottom: 1em;
+}
+
+#presence {
+	border-bottom-left-radius: 0.5em;
+	border-bottom-right-radius: 0.5em;
+}
+
+#footer {
+	margin: 3em 0 3em 0;
+}
