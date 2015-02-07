@@ -95,6 +95,28 @@ ul.skilllist .skill::after {
 	text-align: center;
 }
 
+#project_sub img {
+	width: 100%;
+}
+
+#project_sub ul {
+	list-style: circle;
+	padding-left: 1em;
+}
+
+#project_sub li {
+	font-size: 0.85em;
+}
+
+#project_sub a {
+	text-decoration: none;
+	color: #2c373b;
+}
+
+#project_sub a:hover {
+	color: #12c155;
+}
+
 #carousel {
 	overflow: hidden;
 }
@@ -133,6 +155,10 @@ ul.skilllist {
 	color: #2c373b;
 }
 
+#resume a:hover {
+	color: #12c155;
+}
+
 #blog_imgs {
 	text-align: center;
 }
@@ -148,8 +174,16 @@ ul.stars li {
 
 #reading a {
 	color: #fff;
-	text-decoration: underline;
+	text-decoration: none;
 	font-style: italic;
+}
+
+#reading a:hover {
+	text-decoration: underline;
+}
+
+#reading_button a:hover {
+	text-decoration: none;
 }
 
 #star_img li {
