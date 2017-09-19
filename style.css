@@ -19,12 +19,18 @@ h1, h2, h3, h4, h5, h6 {
 .button {
 	border-radius: 0.5em;
 	box-shadow: inset 0 0 0 2px rgba(255,255,255,0.5);
-	color: #369ab8;
 	color: #fff;
 	display: inline-block;
 	text-decoration: none;
 	background-color: #0cd6d6;
+    background-color: #2E0854;
+    background-color: #694489;
 	margin-top: 1em;
+}
+
+.button:hover {
+    background-color: #694489;
+    background-color: #2E0854;
 }
 
 .arrowDown {
@@ -41,10 +47,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .icon {
 	width: 1.5em;
-}
-
-.blog_img {
-	width: 7em;
 }
 
 .star_img {
@@ -72,11 +74,12 @@ ul.skilllist .skill::after {
 
 #hero, #quote {
 	background: #12c155;
+	background: #ec008b;
 	color: #fff;
 	text-align: center;
 }
 
-#divider {
+.divider {
 	position: relative;
 	text-align: center;
 	border-top-width: 1px;
@@ -86,35 +89,60 @@ ul.skilllist .skill::after {
 	margin-bottom: 4em;
 }
 
-#work, #blog, #presence {
+#work, #lists, #presence {
 	background: #c1c1c1;
 	color: #2c373b;
 }
 
-#work_sub {
+.work_sub {
 	text-align: center;
 }
 
-#project_sub img {
+#lists {
+    text-align: center;
+    padding-bottom: 5em !important;
+}
+
+#lists h6 {
+    margin: 0.5em;
+}
+
+#lists a {
+    text-decoration: none;
+    color: #383838;
+}
+
+#lists a:hover {
+    color: #ec008b;
+}
+
+#lists .owl-carousel img {
+    width: auto;
+    height: 325px;
+    margin: 0 auto;
+}
+
+.project_sub img {
 	width: 100%;
 }
 
-#project_sub ul {
+.project_sub ul {
 	list-style: circle;
 	padding-left: 1em;
 }
 
-#project_sub li {
+.project_sub li {
 	font-size: 0.85em;
 }
 
-#project_sub a {
+.project_sub a {
 	text-decoration: none;
 	color: #2c373b;
 }
 
-#project_sub a:hover {
+.project_sub a:hover {
 	color: #12c155;
+	color: #ec008b;
 }
 
 #carousel {
@@ -146,6 +174,10 @@ ul.skilllist {
 	text-align: left;
 }
 
+.skilllist li {
+    height: 2em;
+}
+
 #resume {
 	margin: 1em 0 0 0;
 }
@@ -157,10 +189,7 @@ ul.skilllist {
 
 #resume a:hover {
 	color: #12c155;
-}
-
-#blog_imgs {
-	text-align: center;
+	color: #ec008b;
 }
 
 ul.stars li {
@@ -193,6 +222,7 @@ ul.stars li {
 #quote {
 	font-family: 'Parisienne', serif;
 	font-size: 1.75em;
+    height: 6.5em;
 }
 
 #contact h5, h6 {
@@ -273,13 +303,44 @@ ul.social li a.fa-book:hover {
 
 ul.social li a.fa-envelope {
 	background: #12c155;
+	background: #ec008b;
 }
 
 ul.social li a.fa-envelope:hover {
 	background: #17d660;
+	background: #2c373b;
 }
 
 #footer {
 	color: #62696c;
 	text-align: center;
+}
+
+#designs {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+
+#designs .design-samples {
+    background: transparent;
+    margin: 0 auto;
+    position: fixed;
+    top: 15%;
+    left: 5%;
+    width: 90%;
+}
+
+#overlay {
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.7;
+}
+
+#designs .owl-carousel img {
+    max-width: 300px;
+    margin: 0 auto;
 }

@@ -60,20 +60,20 @@ section {
 	margin-bottom: 1.5em;
 }
 
-#divider h4 {
+.divider h4 {
 	font-size: 1.25em;
 	text-align: center;
 	font-style: italic;
 	color: #2c373b;
 }
 
-#work, #skills, #blog, #quote, #contact, #presence {
+#work, #skills, #lists, #quote, #contact, #presence {
 	margin: -2em 0 0 0;
 	padding: 0.5em 3em 3em 3em;
 	line-height: 1.5em;
 }
 
-#work h5, #skills h5, #blog h5 {
+#work h5, #skills h5, #lists h5 {
 	color: #2c373b;
 	font-weight: bold;
 	font-size: 1em;
@@ -83,7 +83,7 @@ img.work_img {
 	width: 14em;
 }
 
-#work_button, #dialogButton, #reading_button, #review_button {
+.work_button {
 	text-align: center;
 	width: 100%;
 	margin: 0.25em 0 0 0;

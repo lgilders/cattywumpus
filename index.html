@@ -8,8 +8,8 @@
 		<meta name="author" content="Lori Gildersleeve" />
 
 		<!-- favicons -->
-		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
 
 		<!-- fonts -->
 		<link href='http://fonts.googleapis.com/css?family=Lobster|Lobster' rel='stylesheet' type='text/css'>
@@ -41,6 +41,12 @@
 		}
 		</script>
 
+        <!-- owl carousel -->
+        <link rel="stylesheet" href="js/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="js/owl-carousel/owl.theme.default.min.css">
+        <link rel="stylesheet" href="js/owl-carousel/owl.theme.green.min.css">
+        <script src="js/owl-carousel/owl.carousel.min.js"></script>
+
 		<!-- script to flip through quotes -->
 		<script src="js/quoteScript.js"></script>
 
@@ -63,230 +69,262 @@
 	<body>
 		<div class="container">
 			<!-- Header -->
-				<div id="header" class="row">
-					<div class="4u">
-						<a href="http://www.catty-wumpus.com/"><h1>catty-wumpus</h1></a>
-					</div>
-					<nav id="nav" class="8u">
-						<a href="#work">Work</a>
-						<a href="#skills">Skills</a>
-						<a href="#blog">Blog</a>
-						<a href="#contact">Contact</a>
-					</nav>
-				</div>
+            <div id="header" class="row">
+                <div class="4u">
+                    <a href="http://www.catty-wumpus.com/"><h1>catty-wumpus</h1></a>
+                </div>
+                <nav id="nav" class="8u">
+                    <a href="#work">Work</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#lists">Lists</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
 			<!-- Hero -->
-				<section id="hero">
-					<h2>Lori Gildersleeve</h2>
-					<h3>code monkey | copy editor</h3>
-					<p>a <span class="emphasis">software engineer</span> by training, a <span class="emphasis">literature lover</span> by nature, a <span class="emphasis">Southerner</span> by birth</p>
-					<p>Need a helping hand?</p>
-					<a href="#contact" class="button">Get in Touch</a>
-					<div class="arrowDown">
-						↓
-					</div>
-				</section>
+            <section id="hero">
+                <h2>Lori Gildersleeve</h2>
+                <h3>code monkey | copy editor</h3>
+                <p>a <span class="emphasis">software engineer</span> by training, a <span class="emphasis">literature lover</span> by nature, a <span class="emphasis">Southerner</span> by birth</p>
+                <p>Need a helping hand?</p>
+                <a href="#contact" class="button">Get in Touch</a>
+                <div class="arrowDown">
+                    ↓
+                </div>
+            </section>
 			<!-- Work -->
-				<div id="work">
-					<div id="divider" class="12u">
-						<h4>Work</h4>
-					</div>
-					<div class="row">
-						<section id="work_sub" class="4u">
-						<img src="images/work_imgs/code_img.jpg" alt="Code Image" class="work_img"/>
-							<h5>coding</h5>
-							<p>As a web designer / software developer, I use software engineering best practices to craft exemplary code.</p>
-							<a href="https://github.com/lgilders" target="_blank" id="work_button" class="button">View My GitHub</a>
-						</section>
-						<section id="work_sub" class="4u">
-							<img src="images/work_imgs/design_img.jpg" alt="Design Image" class="work_img"/>
-							<h5>designing</h5>
-							<p>As a digital director, I created simple but visually interesting designs to attract readers' attention.</p>
-							<a href="carousel.html" id="dialogButton" class="button">See My Designs</a>
-						</section>
-						<section id="work_sub" class="4u">
-							<img src="images/work_imgs/edit_img.jpg" alt="Edit Image" class="work_img"/>
-							<h5>editing</h5>
-							<p>As a production editor, I helped writers choose the best possible words for expressing their ideas.</p>
-							<a href="images/Gildersleeve_Samples.pdf" target="_blank" id="work_button" class="button">Read My Samples</a>
-						</section>
-					</div>
-					<div id="project">
-						<div id="divider" class="12u">
-							<h4>Featured Project</h4>
-						</div>
-						<div class="row">
-							<section id="project_sub" class="8u">
-								<a href="http://www.virtual-realty-llc.com"><img src="images/work_imgs/virtual-realty.png" title="Virtual Realty homepage" /></a>
-							</section>
-							<section id="project_sub" class="4u">
-								<h5>Website Design / Development</h5>
-								<p>Virtual Realty LLC corporate website, <a href="http://www.virtual-realty-llc.com">www.virtual-realty-llc.com</a></p>
-								<ul>
-									<li>Responsive design accomodates tablets and mobile devices.</li>
-									<li>Built using HTML5, CSS3, and Bootstrap/JavaScript.</li>
-									<li>Imagery consists of proprietary videos, stock photographs, stock vector graphics, and a custom logo sourced from a freelance graphic designer.</li>
-								</ul>
-							</section>
-						</div>
-					</div>
-				</div>
+            <div id="work">
+                <div class="divider 12u">
+                    <h4>Work</h4>
+                </div>
+                <div class="row">
+                    <section class="work_sub 4u">
+                    <img src="images/work_imgs/code_img.jpg" alt="Code Image" class="work_img"/>
+                        <h5>coding</h5>
+                        <p>As a web designer and software developer, I used software engineering best practices to craft exemplary code.</p>
+                        <!--<a href="https://github.com/lgilders" target="_blank" class="button work_button">Explore Code Samples</a>-->
+                    </section>
+                    <section class="work_sub 4u">
+                        <img src="images/work_imgs/design_img.jpg" alt="Design Image" class="work_img"/>
+                        <h5>designing</h5>
+                        <p>As a digital director, I created simple, yet visually interesting designs to attract readers' attention.</p>
+                        <!--<a href="carousel.html" class="button work_button">View Design Samples</a>-->
+                    </section>
+                    <section class="work_sub 4u">
+                        <img src="images/work_imgs/edit_img.jpg" alt="Edit Image" class="work_img"/>
+                        <h5>editing</h5>
+                        <p>As a production editor, I helped writers choose the best possible words for expressing their ideas.</p>
+                        <!--<a href="images/Gildersleeve_Samples.pdf" target="_blank" class="button work_button">Read Writing Samples</a>-->
+                    </section>
+                </div>
+                <div id="project">
+                    <div class="divider 12u">
+                        <h4>Featured Project</h4>
+                    </div>
+                    <div class="row">
+                        <section class="project_sub 8u">
+                            <a href="http://www.virtual-realty-llc.com"><img src="images/virtual-realty.png" title="Virtual Realty homepage" /></a>
+                        </section>
+                        <section class="project_sub 4u">
+                            <h5>Website Design / Development</h5>
+                            <p>Virtual Realty LLC corporate website, <a href="http://www.virtual-realty-llc.com">www.virtual-realty-llc.com</a></p>
+                            <ul>
+                                <li>Responsive design accomodates tablets and mobile devices.</li>
+                                <li>Built using HTML5, CSS3, and Bootstrap/JavaScript.</li>
+                                <li>Imagery consists of proprietary videos, stock photographs, stock vector graphics, and a custom logo sourced from a freelance graphic designer.</li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </div>
 			<!-- Skills -->
-				<div id="skills">
-					<div id="divider" class="12u">
-						<h4>Skills and Tools</h4>
-					</div>
-					<div id="skill_col" class="row">
-						<section class="3u">
-							<ul class="skilllist">
-								<li><span class="skill"><img src="images/skills_icons/java_icon.png" alt="Java Icon" class="icon"/></span>Java</li>
-								<li><span class="skill"><img src="images/skills_icons/flex_icon.png" alt="Flex Icon" class="icon"/></span>Flex</li>
-								<li><span class="skill"><img src="images/skills_icons/html_icon.png" alt="HTML Icon" class="icon"/></span>HTML/CSS</li>
-							</ul>
-						</section>
-						<section class="3u">
-							<ul class="skilllist">
-								<li><span class="skill"><img src="images/skills_icons/git_icon.png" alt="Git Icon" class="icon"/></span>Git</li>
-								<li><span class="skill"><img src="images/skills_icons/intellij_icon.png" alt="IntelliJ IDEA Icon" class="icon"/></span>IntelliJ IDEA</li>
-								<li><span class="skill"><img src="images/skills_icons/eclipse_icon.png" alt="Eclipse IDE Icon" class="icon"/></span>Eclipse IDE</li>
-							</ul>
-						</section>
-						<section class="3u">
-							<ul class="skilllist">
-								<li><span class="skill"><img src="images/skills_icons/photoshop_icon.png" alt="Photoshop Icon" class="icon"/></span>Photoshop</li>
-								<li><span class="skill"><img src="images/skills_icons/illustrator_icon.png" alt="Illustrator Icon" class="icon"/></span>Illustrator</li>
-								<li><span class="skill"><img src="images/skills_icons/indesign_icon.png" alt="InDesign Icon" class="icon"/></span>InDesign</li>
-							</ul>
-						</section>
-						<section class="3u">
-							<ul class="skilllist">
-								<li><span class="skill"><img src="images/skills_icons/dreamweaver_icon.png" alt="Dreamweaver Icon" class="icon"/></span>Dreamweaver</li>
-								<li><span class="skill"><img src="images/skills_icons/quark_icon.png" alt="QuarkXpress Icon" class="icon"/></span>QuarkXpress</li>
-								<li><span class="skill"><img src="images/skills_icons/windows_icon.png" alt="MS Office Icon" class="icon"/></span>Microsoft Office</li>
-							</ul>
-						</section>
-					</div>
-					<section id="resume" class="12u">
-						<a href="images/Gildersleeve_Resume.pdf" target="_blank"><p><span class="emphasis">Read My Complete Resume Here</span></p></a>
-					</section>
-				</div>
-			<!-- Blog -->
-				<div id="blog">
-					<div id="divider" class="12u">
-						<h4>Blog</h4>
-					</div>
-					<div class="row">
-					<!-- Post -->
-						<section id="blog_imgs" class="2u">
-							<div id="blog_img">
-								<img src="images/blog_imgs/diamond_age_cover.jpg" alt="The Diamond Age book cover" class="blog_img"/>
-							</div>
-							<div id="star_img">
-								<ul id="stars">
-									<li><img src="images/blog_imgs/stars/star_full.png" alt="Full Star" class="star_img"/></li>
-									<li><img src="images/blog_imgs/stars/star_full.png" alt="Full Star" class="star_img"/></li>
-									<li><img src="images/blog_imgs/stars/star_empty.png" alt="Empty Star" class="star_img"/></li>
-									<li><img src="images/blog_imgs/stars/star_empty.png" alt="Empty Star" class="star_img"/></li>
-									<li><img src="images/blog_imgs/stars/star_empty.png" alt="Empty Star" class="star_img"/></li>
-								</ul>
-							</div>
-						</section>
-						<section class="6u">
-							<h5>Review: The Diamond Age by Neil Stephenson</h5>
-							<p>Stephenson explores a future where basic needs are met for everyone and ideologies create enclaves and nations of like-minded individuals for their own protection and betterment. This world is populated with a variety of characters, but the story focuses mostly on those who are affected by the creation of a special book, developed for a wealthy man’s granddaughter, to be used to foster subversion and independent thought. While the book has several interesting ideas, the writing felt flat, along with most of the characters. Also, it has a distinctly (and not entirely pleasant) Western tone in its portrayal of the new Victorians and the second Chinese Cultural Revolution.</p>
-							<a href="http://catty-wumpus.com/blog/" target="_blank" id="review_button" class="button">Read More Reviews Here</a>
-						</section>
-						<!-- Recommendations -->
-						<section id="reading" class="4u">
-							<h5>Recommended Reading</h5>
-							<ul>
-								<li><span class="emphasis">Fantasy:</span> <a href="http://www.amazon.com/The-Name-Wind-Kingkiller-Chronicles/dp/0756404746/ref=sr_1_1?ie=UTF8&qid=1402986743&sr=8-1&keywords=name+of+the+wind" target="_blank" >The Name of the Wind by Patrick Rothfuss</a></li>
-								
-								<li><span class="emphasis">Science Fiction:</span> <a href="http://www.amazon.com/Neuromancer-William-Gibson/dp/0441569595/ref=sr_1_1?s=books&ie=UTF8&qid=1402986767&sr=1-1&keywords=neuromancer" target="_blank" >Neuromancer by William Gibson</a></li>
-								
-								<li><span class="emphasis">Short Stories:</span> <a href="http://www.amazon.com/Green-Leopard-Plague-Other-Stories/dp/1597801771/ref=sr_1_1?ie=UTF8&qid=1402987692&sr=8-1&keywords=green+leopard+plague" target="_blank" >The Green Leopard Plague and Other Stories by Walter Jon Williams</a></li>
-
-								<li><span class="emphasis">Mystery:</span> <a href="http://www.amazon.com/Club-Dumas-Arturo-Perez-Reverte/dp/015603283X/ref=sr_1_1?s=books&ie=UTF8&qid=1402986788&sr=1-1&keywords=el+club+dumas" target="_blank" >El Club Dumas by Arturo Perez-Reverte</a></li>
-								
-								<li><span class="emphasis">Crime:</span> <a href="http://www.amazon.com/Bangkok-Royal-Thai-Detective-Novel/dp/1400032903/ref=sr_1_1?s=books&ie=UTF8&qid=1402986802&sr=1-1&keywords=bangkok+8" target="_blank" >Bangkok 8 by John Burdett</a></li>
-								
-								<li><span class="emphasis">Classic:</span> <a href="http://www.amazon.com/Pride-Prejudice-Jane-Austen/dp/149440477X/ref=sr_1_1?s=books&ie=UTF8&qid=1402986820&sr=1-1&keywords=pride+and+prejudice" target="_blank" >Pride and Prejudice by Jane Austin</a></li>
-								
-								<li><span class="emphasis">Poetry:</span> <a href="http://www.amazon.com/Selected-Poems-T-S-Eliot/dp/0156806479/ref=sr_1_12?ie=UTF8&qid=1402987466&sr=8-12&keywords=t.s.+eliot" target="_blank" >Selected Poems by T.S. Eliot</a></li>
-								
-								<li><span class="emphasis">Humor:</span> <a href="http://www.amazon.com/Hyperbole-Half-Unfortunate-Situations-Mechanisms/dp/1451666179/ref=sr_1_1?s=books&ie=UTF8&qid=1402986872&sr=1-1&keywords=hyperbole+and+a+half" target="_blank" >Hyperbole and a Half by Allie Brosh</a></li>
-								
-								<li><span class="emphasis">Young Adult:</span> <a href="http://www.amazon.com/Blue-Sword-Newbery-Honor-Roll/dp/014130975X/ref=sr_1_1?ie=UTF8&qid=1402987584&sr=8-1&keywords=the+blue+sword" target="_blank" >The Blue Sword by Robin McKinley</a></li>
-								
-								<li><span class="emphasis">Children:</span> <a href="http://www.amazon.com/Where-Sidewalk-Ends-Poems-Drawings/dp/0060572345/ref=sr_1_1?ie=UTF8&qid=1402988008&sr=8-1&keywords=shel+silverstein" target="_blank" >Where the Sidewalk Ends by Shel Silverstein</a></li>
-							</ul>
-							<div id="reading_button">
-								<a href="https://www.goodreads.com/lgildersleeve" target="_blank" class="button">See More Favorites Here</a>
-							</div>
-						</section>
-					</div>
-				</div>
+            <div id="skills">
+                <div class="divider 12u">
+                    <h4>Skills and Tools</h4>
+                </div>
+                <div id="skill_col" class="row">
+                    <section class="3u">
+                        <ul class="skilllist">
+                            <li><span class="skill"><img src="images/skills_icons/java_icon.png" alt="Java Icon" class="icon"/></span>Java</li>
+                            <li><span class="skill"><img src="images/skills_icons/javascript_icon.png" alt="JavaScript Icon" class="icon"/></span>JavaScript</li>
+                            <li><span class="skill"><img src="images/skills_icons/html_icon.png" alt="HTML Icon" class="icon"/></span>HTML</li>
+                            <li><span class="skill"><img src="images/skills_icons/sass_icon.png" alt="Sass Icon" class="icon"/></span>Sass</li>
+                            <li><span class="skill"><img src="images/skills_icons/angular_icon.svg" alt="AngularJS Icon" class="icon"/></span>AngularJS</li>
+                        </ul>
+                    </section>
+                    <section class="3u">
+                        <ul class="skilllist">
+                            <li><span class="skill"><img src="images/skills_icons/git_icon.png" alt="Git Icon" class="icon"/></span>Git</li>
+                            <li><span class="skill"><img src="images/skills_icons/subversion_icon.png" alt="Subversion Icon" class="icon"/></span>Subversion</li>
+                            <li><span class="skill"><img src="images/skills_icons/rtc_icon.png" alt="RTC Icon" class="icon"/></span>RTC</li>
+                            <li><span class="skill"><img src="images/skills_icons/magento_icon.png" alt="Magento Icon" class="icon"/></span>Magento</li>
+                            <li><span class="skill"><img src="images/skills_icons/wordpress_icon.png" alt="WordPress Icon" class="icon"/></span>WordPress</li>
+                        </ul>
+                    </section>
+                    <section class="3u">
+                        <ul class="skilllist">
+                            <li><span class="skill"><img src="images/skills_icons/mysql_icon.png" alt="MySQL Icon" class="icon"/></span>MySQL</li>
+                            <li><span class="skill"><img src="images/skills_icons/oracle_icon.jpg" alt="Oracle Icon" class="icon"/></span>Oracle</li>
+                            <li><span class="skill"><img src="images/skills_icons/intellij_icon.png" alt="IntelliJ IDEA Icon" class="icon"/></span>IntelliJ IDEA</li>
+                            <li><span class="skill"><img src="images/skills_icons/eclipse_icon.png" alt="Eclipse IDE Icon" class="icon"/></span>Eclipse IDE</li>
+                            <li><span class="skill"><img src="images/skills_icons/sublime_icon.jpg" alt="Sublime Text Icon" class="icon"/></span>Sublime Text</li>
+                        </ul>
+                    </section>
+                    <section class="3u">
+                        <ul class="skilllist">
+                            <li><span class="skill"><img src="images/skills_icons/sketch_icon.png" alt="Sketch App Icon" class="icon"/></span>Sketch App</li>
+                            <li><span class="skill"><img src="images/skills_icons/photoshop_icon.png" alt="Photoshop Icon" class="icon"/></span>Photoshop</li>
+                            <li><span class="skill"><img src="images/skills_icons/illustrator_icon.png" alt="Illustrator Icon" class="icon"/></span>Illustrator</li>
+                            <li><span class="skill"><img src="images/skills_icons/indesign_icon.png" alt="InDesign Icon" class="icon"/></span>InDesign</li>
+                            <li><span class="skill"><img src="images/skills_icons/windows_icon.png" alt="MS Office Icon" class="icon"/></span>Microsoft Office</li>
+                        </ul>
+                    </section>
+                </div>
+                <section id="resume" class="12u">
+                    <a href="images/Gildersleeve_Resume.pdf" target="_blank"><p><span class="emphasis">View My Complete Resume Here</span></p></a>
+                </section>
+            </div>
+			<!-- Lists -->
+            <div id="lists">
+                <div class="divider 12u">
+                    <h4>Lists - Book Recommendations</h4>
+                </div>
+                <div class="row">
+                    <!-- Recommendations -->
+                    <div class="owl-carousel book-recommendations">
+                        <div><a href="https://www.goodreads.com/book/show/186074.The_Name_of_the_Wind?from_search=true" target="_blank">
+                            <img src="images/book_covers/name_wind.jpg" alt="The Name of the Wind book cover" />
+                            <h6>Fantasy</h6>
+                            <p>The Name of the Wind</p>
+                            <p>by Patrick Rothfuss</p>
+                        </a></div>
+                        <div><a href="https://www.goodreads.com/book/show/888628.Neuromancer?ac=1&from_search=true" target="_blank">
+                            <img src="images/book_covers/neuromancer.jpg" alt="Neuromancer book cover" />
+                            <h6>Science Fiction</h6>
+                            <p>Neuromancer</p>
+                            <p>by William Gibson</p>
+                        </a></div>
+                        <div><a href="https://www.goodreads.com/book/show/7756439-the-green-leopard-plague-and-other-stories?ac=1&from_search=true" target="_blank">
+                            <img src="images/book_covers/green_leopard.jpg" alt="The Green Leopard Plague book cover" />
+                            <h6>Short Stories</h6>
+                            <p>The Green Leopard Plague and Other Stories</p>
+                            <p>by Walter Jon Williams</p>
+                        </a></div>
+                        <div><a href="https://www.goodreads.com/book/show/7194.The_Club_Dumas?ac=1&from_search=true" target="_blank">
+                            <img src="images/book_covers/club_dumas.jpg" alt="El Club Dumas book cover" />
+                            <h6>Mystery</h6>
+                            <p>El Club Dumas</p>
+                            <p>by Arturo Perez-Reverte</p>
+                        </a></div>
+                        <div><a href="https://www.goodreads.com/book/show/706011.Bangkok_8?ac=1&from_search=true" target="_blank">
+                            <img src="images/book_covers/bangkok.jpg" alt="Bangkok 8 book cover" />
+                            <h6>Crime</h6>
+                            <p>Bangkok 8</p>
+                            <p>by John Burdett</p>
+                        </a></div>
+                        <div><a href="https://www.goodreads.com/book/show/1885.Pride_and_Prejudice?ac=1&from_search=true" target="_blank">
+                            <img src="images/book_covers/pride.jpg" alt="Pride and Prejudice book cover" />
+                            <h6>Classic</h6>
+                            <p>Pride and Prejudice</p>
+                            <p>by Jane Austin</p>
+                        </a></div>
+                        <div><a href="https://www.goodreads.com/book/show/386270.Selected_Poems?ac=1&from_search=true" target="_blank">
+                            <img src="images/book_covers/selected_poems.jpg" alt="Selected Poems book cover" />
+                            <h6>Poetry</h6>
+                            <p>Selected Poems</p>
+                            <p>by T.S. Eliot</p>
+                        </a></div>
+                        <div><a href="https://www.goodreads.com/book/show/17571564-hyperbole-and-a-half?ac=1&from_search=true" target="_blank">
+                            <img src="images/book_covers/hyperbole.jpg" alt="Hyperbole and a Half book cover" />
+                            <h6>Humor</h6>
+                            <p>Hyperbole and a Half</p>
+                            <p>by Allie Brosh</p>
+                        </a></div>
+                        <div><a href="https://www.goodreads.com/book/show/407813.The_Blue_Sword?ac=1&from_search=true" target="_blank">
+                            <img src="images/book_covers/blue_sword.jpg" alt="The Blue Sword book cover" />
+                            <h6>Young Adult</h6>
+                            <p>The Blue Sword</p>
+                            <p>by Robin McKinley</p>
+                        </a></div>
+                    </div>
+                </div>
+            </div>
 			<!-- Quote -->
-				<div id="quote" class="row">
-					<section id="changeQuote" class="12u">
-						<p>As he caught his footing, his head fell back, and the Milky Way flowed down inside him with a roar.</p>
-						<p>~ Yasunari Kawabata</p>
-					</section>
-				</div>
+            <div id="quote" class="row">
+                <section id="changeQuote" class="12u">
+                    <p>As he caught his footing, his head fell back, and the Milky Way flowed down inside him with a roar.</p>
+                    <p>~ Yasunari Kawabata</p>
+                </section>
+            </div>
 			<!-- Contact -->
-				<div id="contact">
-					<div id="divider" class="12u">
-						<h4>Contact</h4>
-					</div>
-					<!-- Real World -->
-					<div class="row">
-						<section class="4u">
-							<ul class="email">
-								<li><span class="fa fa-envelope" /></li>
-								<li><p>lgildersleeve (at) gmail (dot) com</p></li>
-							</ul>
-						</section>
-						<section class="4u">
-							<ul class="address">
-								<li><span class="fa fa-home" /></li>
-								<li><p>Lori Gildersleeve <br/>
-							   492 Springfield Road <br/>
-							   Mount Pleasant, South Carolina, 29464</p></li>
-							</ul>
-						</section>
-						<section class="4u">
-							<ul class="phone">
-								<li><span class="fa fa-phone" /></li>
-								<li><p>843.425.6700</p></li>
-							</ul>
-						</section>	
-					</div>
-				</div>
+            <div id="contact">
+                <div class="divider 12u">
+                    <h4>Contact</h4>
+                </div>
+                <!-- Real World -->
+                <div class="row">
+                    <section class="4u">
+                        <ul class="email">
+                            <li><span class="fa fa-envelope" /></li>
+                            <li><p>lgildersleeve (at) gmail (dot) com</p></li>
+                        </ul>
+                    </section>
+                    <section class="4u">
+                        <ul class="address">
+                            <li><span class="fa fa-home" /></li>
+                            <li><p>Lori Gildersleeve <br/>
+                           492 Springfield Road <br/>
+                           Mount Pleasant, South Carolina, 29464</p></li>
+                        </ul>
+                    </section>
+                    <section class="4u">
+                        <ul class="phone">
+                            <li><span class="fa fa-phone" /></li>
+                            <li><p>843.425.6700</p></li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
 			<!-- Presence -->
-				<div id="presence">
-					<div id="divider" class="12u">
-						<h4>Online Presence</h4>
-					</div>
-					<div id="presence_list">
-						<section class="12u">
-							<ul class="social">
-								<li><a href="http://www.linkedin.com/in/lgildersleeve/" target="_blank" class="fa fa-linkedin"></a></li>
-								<li><a href="https://github.com/lgilders" target="_blank" class="fa fa-github"></a></li>
-								<li><a href="https://www.facebook.com/lgildersleeve" target="_blank" class="fa fa-facebook"></a></li>
-								<li><a href="https://twitter.com/catty_wumpus" target="_blank" class="fa fa-twitter"></a></li>
-								<li><a href="http://www.pinterest.com/llgildersleeve/" target="_blank" class="fa fa-pinterest"></a></li>
-								<li><a href="https://www.goodreads.com/lgildersleeve" target="_blank" class="fa fa-book"></a></li>
-								<li><a href="mailto:lgildersleeve@gmail.com" class="fa fa-envelope"></a></li>
-							</ul>
-						</section>
-					</div>
-				</div>
+            <div id="presence">
+                <div class="divider 12u">
+                    <h4>Online Presence</h4>
+                </div>
+                <div id="presence_list">
+                    <section class="12u">
+                        <ul class="social">
+                            <li><a href="http://www.linkedin.com/in/lgildersleeve/" target="_blank" class="fa fa-linkedin"></a></li>
+                            <li><a href="https://github.com/lgilders" target="_blank" class="fa fa-github"></a></li>
+                            <li><a href="https://www.facebook.com/lgildersleeve" target="_blank" class="fa fa-facebook"></a></li>
+                            <li><a href="https://twitter.com/catty_wumpus" target="_blank" class="fa fa-twitter"></a></li>
+                            <li><a href="http://www.pinterest.com/llgildersleeve/" target="_blank" class="fa fa-pinterest"></a></li>
+                            <li><a href="https://www.goodreads.com/lgildersleeve" target="_blank" class="fa fa-book"></a></li>
+                            <li><a href="mailto:lgildersleeve@gmail.com" class="fa fa-envelope"></a></li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
 			<!-- Footer -->
-				<div id="footer" class="row">
-					&copy; Lori L. Gildersleeve, 2015. All rights reserved.
-				</div>
-			<!-- Dialog Div -->
-				<div id="dialog1" title="Design Samples">
-				</div>
+            <div id="footer" class="row">
+                &copy; Lori L. Gildersleeve, 2017. All rights reserved.
+            </div>
 		</div>
+
+    <script>
+        $(document).ready(function(){
+            $('.book-recommendations').owlCarousel({
+                loop:true,
+                margin:10,
+                nav:false,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:5
+                    }
+                }
+            });
+        });
+    </script>
 	</body>
 </html>

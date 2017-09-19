@@ -51,30 +51,30 @@ h2 {
 	margin-bottom: 0.5em;
 }
 
-#divider h4 {
+.divider h4 {
 	font-size: 1.25em;
 	text-align: center;
 	font-style: italic;
 	color: #2c373b;
 }
 
-#work, #skills, #blog, #quote, #contact, #presence {
+#work, #skills, #lists, #quote, #contact, #presence {
 	margin: -2em 0 1em 0;
 	padding: 1em 3em 3em 3em;
 	line-height: 1.5em;
 }
 
-#work h5, #skills h5, #blog h5 {
+#work h5, #skills h5, #lists h5 {
 	color: #2c373b;
 	font-weight: bold;
 	font-size: 1em;
 }
 
-#work_sub p, #blog p {
+.work_sub p {
 	margin: 0.5em;
 }
 
-#work_button {
+.work_button {
 	margin: 0.5em;
 }
 
