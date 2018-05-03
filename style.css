@@ -222,7 +222,7 @@ ul.stars li {
 #quote {
 	font-family: 'Parisienne', serif;
 	font-size: 1.75em;
-    height: 6.5em;
+    min-height: 6.5em;
 }
 
 #contact h5, h6 {
@@ -262,6 +262,14 @@ ul.social li a.fa-github {
 }
 
 ul.social li a.fa-github:hover {
+	background: #383838;
+}
+
+ul.social li a.fa-codepen {
+	background: #000;
+}
+
+ul.social li a.fa-codepen:hover {
 	background: #383838;
 }
 
